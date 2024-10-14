@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "anki-history"
+version = "0.1.0"
+description = "Anki project to create a history deck."
+authors = ["Begoña Echavarren Sanchez <begona.echavarren@gmail.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+genanki = "0.13.1"
+pandas = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "3.5.0"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "W", "F", "I", "C", "B"]
+ignore = ["E501", "B905", "B008"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
