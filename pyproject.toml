@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "anki-history"
 version = "0.1.0"
-description = "Anki project to create a history deck."
+description = "Project to generate Anki decks using AI."
 authors = ["Begoña Echavarren Sanchez <begona.echavarren@gmail.com>"]
 package-mode = false
 

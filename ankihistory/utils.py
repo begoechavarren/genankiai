@@ -11,14 +11,14 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def create_notes(csv_path: str, model: genanki.Model) -> list[Note]:
+def create_notes(input_path: str, model: genanki.Model) -> list[Note]:
     """Create Anki notes from a CSV file using the provided model.
 
     Args:
-        csv_path (str): Path to the CSV file containing the questions.
+        input_path (str): Path to the CSV file containing the questions.
         model (genanki.Model): Anki note model to use for the notes.
     """
-    questions_df = pd.read_csv(csv_path)
+    questions_df = pd.read_csv(input_path)
     questions = questions_df.values.tolist()
     notes = []
     for question in questions:

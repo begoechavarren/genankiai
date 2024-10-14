@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 def create_history_101_deck():
     history_101_notes = create_notes(
-        csv_path=History101Config.INPUT_CSV_PATH,
+        input_path=History101Config.INPUT_CSV_PATH,
         model=History101Config.MODEL,
     )
 
